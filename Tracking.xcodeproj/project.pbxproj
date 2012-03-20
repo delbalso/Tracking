@@ -1,0 +1,389 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		22E1A995150FBE5B00680AB3 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 22E1A994150FBE5B00680AB3 /* Cocoa.framework */; };
+		22E1A99F150FBE5B00680AB3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 22E1A99D150FBE5B00680AB3 /* InfoPlist.strings */; };
+		22E1A9A2150FBE5B00680AB3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 22E1A9A1150FBE5B00680AB3 /* main.m */; };
+		22E1A9A5150FBE5B00680AB3 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 22E1A9A3150FBE5B00680AB3 /* Credits.rtf */; };
+		22E1A9A8150FBE5B00680AB3 /* TrackingAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 22E1A9A7150FBE5B00680AB3 /* TrackingAppDelegate.m */; };
+		22E1A9AB150FBE5B00680AB3 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22E1A9A9150FBE5B00680AB3 /* MainMenu.xib */; };
+		22E1A9BB150FBEE900680AB3 /* FMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 22E1A9B2150FBEE900680AB3 /* FMDatabase.m */; };
+		22E1A9BC150FBEE900680AB3 /* FMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 22E1A9B4150FBEE900680AB3 /* FMDatabaseAdditions.m */; };
+		22E1A9BD150FBEE900680AB3 /* FMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 22E1A9B6150FBEE900680AB3 /* FMDatabasePool.m */; };
+		22E1A9BE150FBEE900680AB3 /* FMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 22E1A9B8150FBEE900680AB3 /* FMDatabaseQueue.m */; };
+		22E1A9BF150FBEE900680AB3 /* FMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 22E1A9BA150FBEE900680AB3 /* FMResultSet.m */; };
+		22E1A9CC150FC04700680AB3 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 22E1A9CB150FC04700680AB3 /* libsqlite3.dylib */; };
+		22E1A9E215103FDA00680AB3 /* 3Dg16.png in Resources */ = {isa = PBXBuildFile; fileRef = 22E1A9E115103FDA00680AB3 /* 3Dg16.png */; };
+		22E1A9E5151115D700680AB3 /* NSFileManager+DirectoryLocations.m in Sources */ = {isa = PBXBuildFile; fileRef = 22E1A9E4151115D700680AB3 /* NSFileManager+DirectoryLocations.m */; };
+		22E1A9E81511309600680AB3 /* ChromeActiveTab.scpt in Resources */ = {isa = PBXBuildFile; fileRef = 22E1A9E71511309600680AB3 /* ChromeActiveTab.scpt */; };
+		22E1A9EE1511868F00680AB3 /* GeneralTracker.m in Sources */ = {isa = PBXBuildFile; fileRef = 22E1A9ED1511868E00680AB3 /* GeneralTracker.m */; };
+		22E1A9F415123CD700680AB3 /* NSObject+Extras.m in Sources */ = {isa = PBXBuildFile; fileRef = 22E1A9F315123CD500680AB3 /* NSObject+Extras.m */; };
+		22E1A9FC1512635300680AB3 /* SysTracker.m in Sources */ = {isa = PBXBuildFile; fileRef = 22E1A9FB1512635300680AB3 /* SysTracker.m */; };
+		22E3EBFD151650F200E9EF39 /* NSObject-PerformWhenIdle.m in Sources */ = {isa = PBXBuildFile; fileRef = 22E3EBFC151650F200E9EF39 /* NSObject-PerformWhenIdle.m */; };
+		22E3EC0015165E7C00E9EF39 /* SysNotifications.m in Sources */ = {isa = PBXBuildFile; fileRef = 22E3EBFF15165E7B00E9EF39 /* SysNotifications.m */; };
+		22E3EC03151803D000E9EF39 /* AppTracker.m in Sources */ = {isa = PBXBuildFile; fileRef = 22E3EC02151803CF00E9EF39 /* AppTracker.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		22E1A990150FBE5B00680AB3 /* Tracking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tracking.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		22E1A994150FBE5B00680AB3 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		22E1A997150FBE5B00680AB3 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		22E1A998150FBE5B00680AB3 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		22E1A999150FBE5B00680AB3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		22E1A99C150FBE5B00680AB3 /* Tracking-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tracking-Info.plist"; sourceTree = "<group>"; };
+		22E1A99E150FBE5B00680AB3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		22E1A9A0150FBE5B00680AB3 /* Tracking-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tracking-Prefix.pch"; sourceTree = "<group>"; };
+		22E1A9A1150FBE5B00680AB3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		22E1A9A4150FBE5B00680AB3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		22E1A9A6150FBE5B00680AB3 /* TrackingAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TrackingAppDelegate.h; sourceTree = "<group>"; };
+		22E1A9A7150FBE5B00680AB3 /* TrackingAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TrackingAppDelegate.m; sourceTree = "<group>"; };
+		22E1A9AA150FBE5B00680AB3 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		22E1A9B1150FBEE900680AB3 /* FMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabase.h; sourceTree = "<group>"; };
+		22E1A9B2150FBEE900680AB3 /* FMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabase.m; sourceTree = "<group>"; };
+		22E1A9B3150FBEE900680AB3 /* FMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseAdditions.h; sourceTree = "<group>"; };
+		22E1A9B4150FBEE900680AB3 /* FMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseAdditions.m; sourceTree = "<group>"; };
+		22E1A9B5150FBEE900680AB3 /* FMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabasePool.h; sourceTree = "<group>"; };
+		22E1A9B6150FBEE900680AB3 /* FMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabasePool.m; sourceTree = "<group>"; };
+		22E1A9B7150FBEE900680AB3 /* FMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMDatabaseQueue.h; sourceTree = "<group>"; };
+		22E1A9B8150FBEE900680AB3 /* FMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMDatabaseQueue.m; sourceTree = "<group>"; };
+		22E1A9B9150FBEE900680AB3 /* FMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMResultSet.h; sourceTree = "<group>"; };
+		22E1A9BA150FBEE900680AB3 /* FMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FMResultSet.m; sourceTree = "<group>"; };
+		22E1A9CB150FC04700680AB3 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		22E1A9E115103FDA00680AB3 /* 3Dg16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3Dg16.png; sourceTree = "<group>"; };
+		22E1A9E3151115D600680AB3 /* NSFileManager+DirectoryLocations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+DirectoryLocations.h"; sourceTree = "<group>"; };
+		22E1A9E4151115D700680AB3 /* NSFileManager+DirectoryLocations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+DirectoryLocations.m"; sourceTree = "<group>"; };
+		22E1A9E71511309600680AB3 /* ChromeActiveTab.scpt */ = {isa = PBXFileReference; lastKnownFileType = file; path = ChromeActiveTab.scpt; sourceTree = "<group>"; };
+		22E1A9EC1511868D00680AB3 /* GeneralTracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeneralTracker.h; sourceTree = "<group>"; };
+		22E1A9ED1511868E00680AB3 /* GeneralTracker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeneralTracker.m; sourceTree = "<group>"; };
+		22E1A9F215123CD400680AB3 /* NSObject+Extras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSObject+Extras.h"; path = "Tracking.xcodeproj/NSObject+Extras.h"; sourceTree = SOURCE_ROOT; };
+		22E1A9F315123CD500680AB3 /* NSObject+Extras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSObject+Extras.m"; path = "Tracking.xcodeproj/NSObject+Extras.m"; sourceTree = SOURCE_ROOT; };
+		22E1A9FA1512635200680AB3 /* SysTracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SysTracker.h; sourceTree = "<group>"; };
+		22E1A9FB1512635300680AB3 /* SysTracker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SysTracker.m; sourceTree = "<group>"; };
+		22E3EBFB151650F200E9EF39 /* NSObject-PerformWhenIdle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject-PerformWhenIdle.h"; sourceTree = "<group>"; };
+		22E3EBFC151650F200E9EF39 /* NSObject-PerformWhenIdle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject-PerformWhenIdle.m"; sourceTree = "<group>"; };
+		22E3EBFE15165E7B00E9EF39 /* SysNotifications.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SysNotifications.h; sourceTree = "<group>"; };
+		22E3EBFF15165E7B00E9EF39 /* SysNotifications.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SysNotifications.m; sourceTree = "<group>"; };
+		22E3EC01151803CF00E9EF39 /* AppTracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppTracker.h; sourceTree = "<group>"; };
+		22E3EC02151803CF00E9EF39 /* AppTracker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppTracker.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		22E1A98D150FBE5B00680AB3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22E1A9CC150FC04700680AB3 /* libsqlite3.dylib in Frameworks */,
+				22E1A995150FBE5B00680AB3 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		22E1A985150FBE5B00680AB3 = {
+			isa = PBXGroup;
+			children = (
+				22E1A99A150FBE5B00680AB3 /* Tracking */,
+				22E1A993150FBE5B00680AB3 /* Frameworks */,
+				22E1A991150FBE5B00680AB3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		22E1A991150FBE5B00680AB3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				22E1A990150FBE5B00680AB3 /* Tracking.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		22E1A993150FBE5B00680AB3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				22E1A994150FBE5B00680AB3 /* Cocoa.framework */,
+				22E1A996150FBE5B00680AB3 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		22E1A996150FBE5B00680AB3 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				22E1A997150FBE5B00680AB3 /* AppKit.framework */,
+				22E1A998150FBE5B00680AB3 /* CoreData.framework */,
+				22E1A999150FBE5B00680AB3 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		22E1A99A150FBE5B00680AB3 /* Tracking */ = {
+			isa = PBXGroup;
+			children = (
+				22E1A9EC1511868D00680AB3 /* GeneralTracker.h */,
+				22E3EC01151803CF00E9EF39 /* AppTracker.h */,
+				22E3EC02151803CF00E9EF39 /* AppTracker.m */,
+				22E1A9ED1511868E00680AB3 /* GeneralTracker.m */,
+				22E1A9FA1512635200680AB3 /* SysTracker.h */,
+				22E1A9FB1512635300680AB3 /* SysTracker.m */,
+				22E3EBFE15165E7B00E9EF39 /* SysNotifications.h */,
+				22E3EBFF15165E7B00E9EF39 /* SysNotifications.m */,
+				22E1A9E6151115F500680AB3 /* Utilites */,
+				22E1A9A6150FBE5B00680AB3 /* TrackingAppDelegate.h */,
+				22E1A9A7150FBE5B00680AB3 /* TrackingAppDelegate.m */,
+				22E1A9A9150FBE5B00680AB3 /* MainMenu.xib */,
+				22E1A99B150FBE5B00680AB3 /* Supporting Files */,
+			);
+			path = Tracking;
+			sourceTree = "<group>";
+		};
+		22E1A99B150FBE5B00680AB3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				22E1A9E71511309600680AB3 /* ChromeActiveTab.scpt */,
+				22E1A9E115103FDA00680AB3 /* 3Dg16.png */,
+				22E1A9CB150FC04700680AB3 /* libsqlite3.dylib */,
+				22E1A9C0150FBEEF00680AB3 /* FMDB */,
+				22E1A99C150FBE5B00680AB3 /* Tracking-Info.plist */,
+				22E1A99D150FBE5B00680AB3 /* InfoPlist.strings */,
+				22E1A9A0150FBE5B00680AB3 /* Tracking-Prefix.pch */,
+				22E1A9A1150FBE5B00680AB3 /* main.m */,
+				22E1A9A3150FBE5B00680AB3 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		22E1A9C0150FBEEF00680AB3 /* FMDB */ = {
+			isa = PBXGroup;
+			children = (
+				22E1A9B1150FBEE900680AB3 /* FMDatabase.h */,
+				22E1A9B2150FBEE900680AB3 /* FMDatabase.m */,
+				22E1A9B3150FBEE900680AB3 /* FMDatabaseAdditions.h */,
+				22E1A9B4150FBEE900680AB3 /* FMDatabaseAdditions.m */,
+				22E1A9B5150FBEE900680AB3 /* FMDatabasePool.h */,
+				22E1A9B6150FBEE900680AB3 /* FMDatabasePool.m */,
+				22E1A9B7150FBEE900680AB3 /* FMDatabaseQueue.h */,
+				22E1A9B8150FBEE900680AB3 /* FMDatabaseQueue.m */,
+				22E1A9B9150FBEE900680AB3 /* FMResultSet.h */,
+				22E1A9BA150FBEE900680AB3 /* FMResultSet.m */,
+			);
+			name = FMDB;
+			sourceTree = "<group>";
+		};
+		22E1A9E6151115F500680AB3 /* Utilites */ = {
+			isa = PBXGroup;
+			children = (
+				22E3EBFB151650F200E9EF39 /* NSObject-PerformWhenIdle.h */,
+				22E3EBFC151650F200E9EF39 /* NSObject-PerformWhenIdle.m */,
+				22E1A9F215123CD400680AB3 /* NSObject+Extras.h */,
+				22E1A9F315123CD500680AB3 /* NSObject+Extras.m */,
+				22E1A9E3151115D600680AB3 /* NSFileManager+DirectoryLocations.h */,
+				22E1A9E4151115D700680AB3 /* NSFileManager+DirectoryLocations.m */,
+			);
+			name = Utilites;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		22E1A98F150FBE5B00680AB3 /* Tracking */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 22E1A9AE150FBE5B00680AB3 /* Build configuration list for PBXNativeTarget "Tracking" */;
+			buildPhases = (
+				22E1A98C150FBE5B00680AB3 /* Sources */,
+				22E1A98D150FBE5B00680AB3 /* Frameworks */,
+				22E1A98E150FBE5B00680AB3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Tracking;
+			productName = Tracking;
+			productReference = 22E1A990150FBE5B00680AB3 /* Tracking.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		22E1A987150FBE5B00680AB3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = "University of Toronto";
+			};
+			buildConfigurationList = 22E1A98A150FBE5B00680AB3 /* Build configuration list for PBXProject "Tracking" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 22E1A985150FBE5B00680AB3;
+			productRefGroup = 22E1A991150FBE5B00680AB3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				22E1A98F150FBE5B00680AB3 /* Tracking */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		22E1A98E150FBE5B00680AB3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22E1A99F150FBE5B00680AB3 /* InfoPlist.strings in Resources */,
+				22E1A9A5150FBE5B00680AB3 /* Credits.rtf in Resources */,
+				22E1A9AB150FBE5B00680AB3 /* MainMenu.xib in Resources */,
+				22E1A9E215103FDA00680AB3 /* 3Dg16.png in Resources */,
+				22E1A9E81511309600680AB3 /* ChromeActiveTab.scpt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		22E1A98C150FBE5B00680AB3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22E1A9A2150FBE5B00680AB3 /* main.m in Sources */,
+				22E1A9A8150FBE5B00680AB3 /* TrackingAppDelegate.m in Sources */,
+				22E1A9BB150FBEE900680AB3 /* FMDatabase.m in Sources */,
+				22E1A9BC150FBEE900680AB3 /* FMDatabaseAdditions.m in Sources */,
+				22E1A9BD150FBEE900680AB3 /* FMDatabasePool.m in Sources */,
+				22E1A9BE150FBEE900680AB3 /* FMDatabaseQueue.m in Sources */,
+				22E1A9BF150FBEE900680AB3 /* FMResultSet.m in Sources */,
+				22E1A9E5151115D700680AB3 /* NSFileManager+DirectoryLocations.m in Sources */,
+				22E1A9EE1511868F00680AB3 /* GeneralTracker.m in Sources */,
+				22E1A9F415123CD700680AB3 /* NSObject+Extras.m in Sources */,
+				22E1A9FC1512635300680AB3 /* SysTracker.m in Sources */,
+				22E3EBFD151650F200E9EF39 /* NSObject-PerformWhenIdle.m in Sources */,
+				22E3EC0015165E7C00E9EF39 /* SysNotifications.m in Sources */,
+				22E3EC03151803D000E9EF39 /* AppTracker.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		22E1A99D150FBE5B00680AB3 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				22E1A99E150FBE5B00680AB3 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		22E1A9A3150FBE5B00680AB3 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				22E1A9A4150FBE5B00680AB3 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		22E1A9A9150FBE5B00680AB3 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				22E1A9AA150FBE5B00680AB3 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		22E1A9AC150FBE5B00680AB3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		22E1A9AD150FBE5B00680AB3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		22E1A9AF150FBE5B00680AB3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tracking/Tracking-Prefix.pch";
+				INFOPLIST_FILE = "Tracking/Tracking-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		22E1A9B0150FBE5B00680AB3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tracking/Tracking-Prefix.pch";
+				INFOPLIST_FILE = "Tracking/Tracking-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		22E1A98A150FBE5B00680AB3 /* Build configuration list for PBXProject "Tracking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22E1A9AC150FBE5B00680AB3 /* Debug */,
+				22E1A9AD150FBE5B00680AB3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		22E1A9AE150FBE5B00680AB3 /* Build configuration list for PBXNativeTarget "Tracking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22E1A9AF150FBE5B00680AB3 /* Debug */,
+				22E1A9B0150FBE5B00680AB3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 22E1A987150FBE5B00680AB3 /* Project object */;
+}
