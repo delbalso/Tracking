@@ -24,5 +24,6 @@ extern NSString * const shutdownEvent;
 - (void)wakeNotification:(NSNotification *)note;
 - (void)sleepNotification:(NSNotification *)note;
 - (void)idleNotification:(NSNotification *)note;
+- (void)shutdownNotification:(NSNotification *)note;
 - (void)backFromIdleNotification:(NSNotification *)note;
 @end

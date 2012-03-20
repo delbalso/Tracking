@@ -139,7 +139,6 @@ NSString * const DirectoryLocationDomain = @"DirectoryLocationDomain";
 	NSString *executableName =
 		[[[NSBundle mainBundle] infoDictionary] objectForKey:@"CFBundleExecutable"];
     NSString *appendPath = [executableName stringByAppendingPathComponent:subFolder];
-    NSLog(@"%@",appendPath);
 	NSError *error;
 	NSString *result =
 		[self

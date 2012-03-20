@@ -20,9 +20,10 @@ NSString * const shutdownEvent = @"shutdown";
     self = [super init];
     //Set up Notifications
     
-    //Sleep Notifications
+    //Sleep/shutdown Notifications
     [[[NSWorkspace sharedWorkspace] notificationCenter] addObserver: self selector: @selector(sleepNotification:) name: NSWorkspaceWillSleepNotification object: NULL];
     [[[NSWorkspace sharedWorkspace] notificationCenter] addObserver: self selector: @selector(wakeNotification:) name: NSWorkspaceDidWakeNotification object: NULL];
+    [[[NSWorkspace sharedWorkspace] notificationCenter] addObserver: self selector: @selector(shutdownNotification:) name: NSWorkspaceWillPowerOffNotification object: NULL];
     
     //Idle Notifications
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(idleNotification:) name:@"systemIdleStart" object:nil];
@@ -32,22 +33,23 @@ NSString * const shutdownEvent = @"shutdown";
     [[GeneralTracker getDatabase] executeUpdate:@"create table IF NOT EXISTS systemEvents (ID INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, START_TIME TEXT NOT NULL, END_TIME TEXT NOT NULL, INTERVAL_TIME TEXT NOT NULL, EVENT_NAME TEXT NOT NULL)"];
     [GeneralTracker dbErrorCheck];
     [self setStartTime:[self endTime]];
-    [self setEventName:(NSString*)[NSObject activeProcessName]];
+    [self setEventName:activeEvent];
     [self setEndTime:nil];
     return self;
 }
 //switching to a new app
-- (void) addEvent:(NSString*)neweventName
+- (void) addEvent:(NSString*)newEventName
 {
-    if (![eventName isEqualToString:neweventName] )
+    if (![eventName isEqualToString:newEventName] )
     {
         //above if statement skips adding the event if the user is idle.
-        NSLog(@"System Status: %@",neweventName);
+        NSLog(@"System Status: %@",newEventName);
         [self setEndTime:[NSDate date]];//set end_time to right now
         [self saveData];
         
         [self setStartTime:[self endTime]];
-        [self setEventName:neweventName];
+        NSLog(@"start time is now %f",[startTime timeIntervalSince1970]);
+        [self setEventName:newEventName];
         [self setEndTime:nil];
     }
 }
@@ -71,6 +73,10 @@ NSString * const shutdownEvent = @"shutdown";
 - (void)idleNotification:(NSNotification *)note
 {
     [self addEvent:idleEvent];
+}
+- (void)shutdownNotification:(NSNotification *)note
+{
+    [self addEvent:shutdownEvent];
 }
 - (void)backFromIdleNotification:(NSNotification *)note
 {

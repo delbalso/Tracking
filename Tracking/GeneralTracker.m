@@ -30,17 +30,15 @@ static FMDatabase * database;
 }
 + (void) systemIdleNotify
 {
-    NSLog(@"SYSTEMIDLENOTIFY CALLED");
     [[NSNotificationCenter defaultCenter] postNotificationName:@"systemIdleStart" object:nil];
 }
 + (BOOL) open
 {
     NSString *path = [[NSFileManager defaultManager] applicationSupportDirectory:@"db"];
-    path = [path stringByAppendingPathComponent:@"database1.sqlite"];
+    path = [path stringByAppendingPathComponent:@"testing-db.sqlite"];
     //[[GeneralTracker getDatabase] setDatabase:[FMDatabase databaseWithPath:path]];
     database = [[FMDatabase databaseWithPath:path] retain];
     [database open];
-    NSLog(@"OPENINGDATABASE");
     return [GeneralTracker  dbErrorCheck];
 }
 + (FMDatabase*) getDatabase

@@ -56,7 +56,7 @@ NSString * const at_idleEvent = @"idle";
         ([newEventName isEqualToString:at_idleEvent] && ![eventName isEqualToString:at_idleEvent] ))
     {
         //above if statement skips adding the event if the user is idle.
-        NSLog(@"System Status: %@",newEventName);
+        NSLog(@"App Focus: %@",newEventName);
         [self setEndTime:[NSDate date]];//set end_time to right now
         [self saveData];
         
